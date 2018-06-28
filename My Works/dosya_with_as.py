@@ -1,0 +1,12 @@
+with open("huseyin.txt","r") as dosya:
+    dosya.seek(10)
+    print(dosya.read())
+    dosya.seek(5)
+    print(dosya.read())
+    dosya.seek(10)
+    print(dosya.read(3))
+    dosya.seek(10)
+    str1=dosya.read(5)
+    dosya.seek(20)
+    str2=dosya.read(5)
+    print(str1,str2)
